@@ -1,4 +1,5 @@
 import { TinySecp256k1Interface } from './bip32';
+global.Buffer = global.Buffer || require('buffer').Buffer;
 
 const h = (hex: string): Buffer => Buffer.from(hex, 'hex');
 
